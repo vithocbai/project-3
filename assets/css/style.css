@@ -55,7 +55,6 @@ a {
     overflow: hidden;
 }
 
-
 .controls {
     display: flex;
     align-items: center;
@@ -72,8 +71,8 @@ a {
     height: 36px;
     outline: transparent;
     background: transparent;
-    color: #575F66;
-    border: 1px solid #575F66;
+    color: #575f66;
+    border: 1px solid #575f66;
     border-radius: 50%;
     font-size: 1.4rem;
     transition: all 0.3s ease;
@@ -514,4 +513,52 @@ a {
     line-height: 185.714%;
 }
 
+/* === app-store === */
+.app-store {
+    margin-top: 195px;
+}
 
+.app-store__content {
+    position: relative;
+    padding: 76px 70px;
+    display: flex;
+    align-items: center;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+
+.app-store__phone {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.app-store__info {
+    width: 57%;
+    margin-left: auto;
+}
+
+.app-store__heading {
+    max-width: 489px;
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.app-store__desc {
+    max-width: 100%;
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.app-store__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
