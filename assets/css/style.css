@@ -55,6 +55,36 @@ a {
     overflow: hidden;
 }
 
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px;
+    gap: 18px;
+}
+
+.control__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    outline: transparent;
+    background: transparent;
+    color: #575F66;
+    border: 1px solid #575F66;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.control__icon:hover {
+    color: #fff;
+    background: var(--primary-bg-btn);
+    border: transparent;
+    cursor: pointer;
+}
 /* === Header === */
 .header {
     padding: 30px 0 110px;
@@ -366,14 +396,12 @@ a {
 .feature__content {
     display: flex;
     align-items: center;
-
 }
 
 .feature__image {
     min-width: 49%;
     position: relative;
     min-height: 490px;
-
 }
 
 .feature__img {
@@ -419,3 +447,71 @@ a {
 .feature__btn {
     margin-top: 38px;
 }
+
+/* === member === */
+.member {
+    margin-top: 30px;
+    padding: 70px 0;
+}
+
+.member__heading {
+    color: var(--primary-heading-color);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.member__btn {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.member__image {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    overflow: hidden;
+}
+
+.member__thumb {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+
+.member__thumb:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.member__name {
+    margin-top: 12px;
+    color: var(--primary-heading-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.member__desc {
+    color: var(--primary-color-text);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 185.714%;
+}
+
+
