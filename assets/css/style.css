@@ -356,3 +356,66 @@ a {
     color: #2e80ce;
     font-weight: 400;
 }
+
+/* === feature === */
+.feature {
+    margin-top: 100px;
+    padding: 70px 0;
+}
+
+.feature__content {
+    display: flex;
+    align-items: center;
+
+}
+
+.feature__image {
+    min-width: 49%;
+    position: relative;
+    min-height: 490px;
+
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:hover {
+    cursor: pointer;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__img:last-child {
+    position: absolute;
+    top: 121px;
+    right: 0;
+    width: 332px;
+}
+
+.feature__info {
+    max-width: 40%;
+    margin-left: auto;
+}
+
+.feature__heading {
+    color: var(--primary-heading-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.feature__desc {
+    margin-top: 18px;
+    color: var(--primary-color-text);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.feature__btn {
+    margin-top: 38px;
+}
